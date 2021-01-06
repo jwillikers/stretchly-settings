@@ -1,0 +1,80 @@
+= Stretchly Settings
+Jordan Williams <jordan@jwillikers.com>
+:experimental:
+:icons: font
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+:stretchly: https://hovancik.net/stretchly/[Stretchly]
+
+My settings for the {stretchly} break timer.
+
+== Usage
+
+This repository contains the settings file for Stretchly.
+This file is syncronized using this Git repository.
+The following instructions detail how to use and sync this repository.
+
+=== Install
+
+Install these settings with the following instructions.
+
+. Clone this repository.
++
+[source,sh]
+----
+➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+----
+
+. Copy the `config.json` file to the appropriate location.
++
+--
+NOTE: Close Stretchly before copying the settings file.
+
+[source,sh]
+----
+➜ cp ~/Projects/stretchly-settings/config.json \
+  ~/.config/Stretchly/
+----
+--
+
+=== Update
+
+To update the settings in this repository from an existing installation, follow these steps.
+
+. If you haven't already done so, clone this repository.
++
+[source,sh]
+----
+➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+----
+
+. Copy the `config.json` file from the appropriate location to the Git repository.
++
+[source,sh]
+----
+➜ cp ~/.config/Stretchly/config.json \
+  ~/Projects/stretchly-settings/
+----
+
+// todo Add instructions for using a merge tool to merge disparate settings files.
+
+== Code of Conduct
+
+The project's Code of Conduct is available in the link:CODE_OF_CONDUCT.adoc[] file.
+
+== License
+
+This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[GPLv3], available in the link:LICENSE.adoc[] file.
+
+== Copyright
+
+© 2020 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
