@@ -46,7 +46,7 @@
 	"endBreakShortcut": "CmdOrCtrl+X",
 	"breakWindowWidth": 0.85,
 	"breakWindowHeight": 0.85,
-	"checkNewVersion": true,
+	"checkNewVersion": false,
 	"breakIdeas": [
 		{
 			"data": [
