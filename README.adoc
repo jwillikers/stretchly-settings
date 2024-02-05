@@ -16,7 +16,7 @@ My settings for the {stretchly} break timer.
 == Usage
 
 This repository contains the settings file for Stretchly.
-This file is syncronized using this Git repository.
+This file is synchronized using this Git repository.
 The following instructions detail how to use and sync this repository.
 
 === Install
@@ -25,43 +25,21 @@ Install these settings with the following instructions.
 
 . Clone this repository.
 +
-[source,sh]
+[,sh]
 ----
-➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
 ----
 
-. Copy the `config.json` file to the appropriate location.
+. Symlink the `config.json` file to the appropriate location.
 +
 --
 NOTE: Close Stretchly before copying the settings file.
 
-[source,sh]
+[,sh]
 ----
-➜ cp ~/Projects/stretchly-settings/config.json \
-  ~/.config/Stretchly/
+ln --relative --symbolic --force ~/Projects/stretchly-settings/config.json ~/.config/Stretchly/config.json
 ----
 --
-
-=== Update
-
-To update the settings in this repository from an existing installation, follow these steps.
-
-. If you haven't already done so, clone this repository.
-+
-[source,sh]
-----
-➜ git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
-----
-
-. Copy the `config.json` file from the appropriate location to the Git repository.
-+
-[source,sh]
-----
-➜ cp ~/.config/Stretchly/config.json \
-  ~/Projects/stretchly-settings/
-----
-
-// todo Add instructions for using a merge tool to merge disparate settings files.
 
 == Code of Conduct
 
@@ -73,7 +51,7 @@ This repository is licensed under the https://www.gnu.org/licenses/gpl-3.0.html[
 
 == Copyright
 
-© 2020 Jordan Williams
+© 2020-2024 Jordan Williams
 
 == Authors
 
