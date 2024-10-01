@@ -27,7 +27,7 @@ Install these settings with the following instructions.
 +
 [,sh]
 ----
-git -C ~/Projects clone git@github.com:jwillikers/stretchly-settings.git
+git -C ~/Projects clone git@codeberg.org:jwillikers/stretchly-config.git
 ----
 
 . Symlink the `config.json` file to the appropriate location.
